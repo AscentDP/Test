@@ -1,0 +1,22 @@
+﻿<Window x:Class="Test1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="495" Width="633" Background="#FF1A1A1D">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txbLogin" HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="526" Height="40" FontSize="24" Background="{x:Null}" Foreground="#FF950740" BorderBrush="#FF6F2232" BorderThickness="4px" SelectionBrush="#FF950740" SelectionOpacity="-1">
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontSize="24" Foreground="White" Height="32" Width="76"/>
+        <TextBox x:Name="txbPassword" HorizontalAlignment="Left" Margin="10,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="526" Height="40" FontSize="24" Background="{x:Null}" Foreground="#FF950740" BorderBrush="#FF6F2232" BorderThickness="4px" SelectionBrush="#FF950740"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,137,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="24" Foreground="White" Height="32" Width="92"/>
+        <Button x:Name="ButtonAuth" Content="Войти" HorizontalAlignment="Center" Margin="0,386,0,0" VerticalAlignment="Top" Height="46" Width="120" Foreground="White" Background="#FF950740" BorderBrush="#FF950740" FontSize="24" Click="ButtonAuth_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,240,0,0" TextWrapping="Wrap" Text="Нету аккаунта?" VerticalAlignment="Top" FontSize="18" Foreground="White" MouseDown="NewAccount_Click"/>
+    </Grid>
+</Window>
